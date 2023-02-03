@@ -1,0 +1,385 @@
+/* welcome color#745b37;
+buy color:#sb2a02;
+
+p=#2c2727;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@400;500;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+a:link a:visited {
+  list-style: none;
+  outline: none;
+  background-origin: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section,
+span,
+p {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  background-image: url("./img/coffee.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.header-logo {
+  font: size 16px;
+  letter-spacing: 2px;
+  border-bottom: 5px solid black;
+  border-radius: 35px;
+  padding-bottom: 5px;
+}
+
+ul {
+  display: flex;
+}
+li {
+  margin-left: 27px;
+}
+li:first-child {
+  margin-right: 70px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.header-test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 8.5rem;
+  font-weight: 100;
+  line-height: 0.4;
+  letter-spacing: 2px;
+  font-family: "Herr Von Muellerhoff", cursive;
+  color: #745b37;
+}
+
+.first-letter {
+  font-size: 10.3rem;
+  font-family: "Herr Von Muellerhoff", cursive;
+  color: #745b37;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.button {
+  display: block;
+  background-color: #745b37;
+  color: #fff;
+  padding: 10px 15px;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  position: relative;
+  overflow: hidden;
+}
+.button::after {
+  content: "BUY";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #875105;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.button:hover::after {
+  top: 0;
+}
+/*ABOUT*/
+.about {
+  margin-bottom: 150px;
+}
+.about-title {
+  margin: 60px 0;
+}
+.about-title h2 {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  color: #714405;
+  font-size: 30px;
+  font-weight: 600;
+}
+/*.about-title h2{
+      content: 2px; 
+      width: 30px;
+      height: 3px;
+      background-color: #714405;
+      margin: 0 auto;
+      display: block;
+      margin-top: 10px;
+      
+    }
+   /* .about-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    
+    }*/
+    .about-img{
+      width: 100%;
+    }
+    .about-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+.about-text {
+  width: 40%;
+}
+h4 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 40px;
+  color: #714405;
+  font-family: "Herr Von Muellerhoff", cursive;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+/*portfolio*/
+
+.portfolio-content{
+  
+  display: flex;
+  justify-content: space-around;
+  margin: 0  0;
+  flex-wrap: wrap ;
+}
+
+
+.portfolio{
+  width: 25%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.products{
+  background-image:( linear-gradient#714405, rgb(222, 222, 222));
+  padding: 4rem;  
+}
+.products-title, .services-title{
+  font-size: 2rem;
+  margin: 1em 0;
+}
+.product-description{
+  font-size: 1.2rem;
+}
+.product-images{
+  display: flex;
+  justify-content: space-around;
+  margin: 8rem 0;
+  flex-wrap: wrap ;
+}
+.product-image-item{
+  width: 400px;
+  height: 300px;
+  border: 4px solid black;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 4px black;
+}
+.product-1{
+  background-image: url("img/coffee-2133444_1920.jpg.");
+}
+.product-2{
+  background-image: url("img/coffee-2358388_1920.jpg");
+}
+.product-3{
+  background-image: url("img/ice-2571490_1920.jpg");
+}
+
+.product-overlay{  
+  background-color: rgba(0, 0, 0, 0.318);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+.product-btn{
+  margin-bottom: 1rem;  
+}
+/*info*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+fieldset {
+  padding: 2em;
+  /*background-color:#714405 ;*/
+}
+form {
+  width: 600px;
+  margin: 3em auto;
+  border: 5px dashed #ebb25b;
+  padding: 2em;
+}
+fieldset:has(input[type="text"], input[type="email"]) {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"],
+input[type="email"] {
+  border: 4px solid#e8a241 ;
+  font-size: 22px;
+  background-color: #3b2403;
+  color: white;
+  border-radius: 3px;
+  transition: all 1s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 4px solid#714405 ;
+  outline: 1px dotted #4b2d03;
+}
+input[type="email"]:invalid {
+  border: 4px solid #e9900b;
+}
+input[type="email"]:valid {
+  border: 4px solid #e28f1a;
+}
+input[type="checkbox"]:checked {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 4px solid black;
+  
+}
+input[type="checkbox"]:checked {
+  background-color: #714405;
+ background-size: contain; 
+}
+input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 20px;
+  border-width: 0 4px 4px 0;
+  border-color:#ded7ce ;
+  border-style: solid;
+  transform: translateX(9px) translateY(0px) rotate(45deg);
+}
+
+.checks{
+  display: flex;
+  align-items: center;
+}
+.option{
+  margin: 10px;
+}
+body {
+  background-color:#efeae3;
+}
+@media( max-width:900px){
+.product-image-item{
+  margin-top: 1em;
+}
+}
+
+
+@media (max-width: 580px) {
+  form {
+    width: 90%; 
+    margin: 3em auto;
+    background-color: #ceac7c;
+  }
+  .container{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 300px;
+    top:420px;
+    align-items: center;
+    flex-direction: row;
+    width:500px;
+    height: 100px;
+    font-weight: 900;
+
+  }
+}
+@media (max-width: 500px){
+  body{
+      background-color:#714405;
+  }
+}
+
+/*contact*/
+
+.footer{
+  background-color:#e2c398 ;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: rgb(32, 12, 12);
+  flex-wrap: wrap;
+
+}
+.footer-title{
+  font-size:1.5rem;
+  margin: 1rem 0;
+}
+.footer > ul > li{
+  line-height: 1.5;
+  
+}
+
